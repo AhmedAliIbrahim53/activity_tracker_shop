@@ -1,5 +1,5 @@
-# activity_tracker_shop
+# activity_tracker_shop_UI
 
-A new Flutter shop application based on tracking user activity and redeem coins to buy more products
+A part of UI of Activity Tracker Shop app which based on tracking user activity and redeem coins to buy more products
 
 Just a Task ... wait the whole app soon.
