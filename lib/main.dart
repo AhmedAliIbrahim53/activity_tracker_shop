@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import './helpers/custom_page_transition_builder.dart';
 import './screens/controller.dart';
 import './screens/log_in_screen.dart';
 import './screens/permission_request_screen.dart';
@@ -17,6 +18,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Activity Shop',
+      theme: ThemeData(
+        primarySwatch: Colors.purple,
+        accentColor: Colors.deepOrange,
+        pageTransitionsTheme: PageTransitionsTheme(builders: {
+          TargetPlatform.android: CustomPageTransitionBuilder(),
+          TargetPlatform.iOS: CustomPageTransitionBuilder(),
+        }),
+      ),
       routes: {
         '/': (ctx) => Splash1(),
         Splash2.id: (ctx) => Splash2(),
